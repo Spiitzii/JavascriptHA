@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrkartenpreiskategorie</title>
+</head>
+<body>
+    <h1>Fahrkartenpreiskategorie</h1>
+    <label for="Alter">Gib dein Alter ein:</label>
+    <input type="number" id="Alter">
+    <button onclick="Alter()">Auswerten</button>
+    <p id="ergebnis"></p>
+
+    <script>
+        function Alter() {
+            var punktzahl = parseInt(document.getElementById("Alter").value);
+              
+                var ergebnisElement = document.getElementById("ergebnis");
+                if (punktzahl >= 67) {
+                    ergebnisElement.textContent = "Seniorenpreis";
+                } else if (punktzahl >= 18 && punktzahl <= 66) {
+                    ergebnisElement.textContent = "Vollpreis";
+                } else if (punktzahl >= 6 && punktzahl <= 17) {
+                    ergebnisElement.textContent = "Kinderpreis";
+                } else if (punktzahl < 6) {
+                    ergebnisElement.textContent = "kostenlos";
+                }
+
+        }
+    </script>
+</body>
+</html>

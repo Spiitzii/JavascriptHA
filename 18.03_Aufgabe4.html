@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punktzahl auswerten</title>
+</head>
+<body>
+    <h1>Note auswerten</h1>
+    <label for="punktzahlInput">Gib deine Punktzahl ein:</label>
+    <input type="number" id="punktzahlInput">
+    <button onclick="bewertePunktzahl()">Auswerten</button>
+    <p id="ergebnis"></p>
+
+    <script>
+        function bewertePunktzahl() {
+            // Die Punktzahl des Benutzers aus dem Eingabefeld abrufen
+            var punktzahl = parseInt(document.getElementById("punktzahlInput").value);
+
+            // Prüfen, ob die eingegebene Zahl den Anforderungen entspricht
+            if (punktzahl >= 0 && punktzahl <= 100) {
+                // Punktzahl auswerten und Ergebnis im HTML anzeigen
+                var ergebnisElement = document.getElementById("ergebnis");
+                if (punktzahl > 90) {
+                    ergebnisElement.textContent = "sehr gut";
+                } else if (punktzahl >= 80 && punktzahl <= 90) {
+                    ergebnisElement.textContent = "gut";
+                } else if (punktzahl >= 70 && punktzahl < 80) {
+                    ergebnisElement.textContent = "befriedigend";
+                } else if (punktzahl >= 60 && punktzahl < 70) {
+                    ergebnisElement.textContent = "ausreichend";
+                } else {
+                    ergebnisElement.textContent = "nicht bestanden";
+                }
+            } else {
+                alert("Ungültige Eingabe. Bitte geben Sie eine Zahl zwischen 0 und 100 ein.");
+            }
+        }
+    </script>
+</body>
+</html>
