@@ -18,3 +18,4 @@ bewertePunktzahl(81); // gut
 bewertePunktzahl(71); // befriedigend
 bewertePunktzahl(61); // ausreichend
 bewertePunktzahl(50); // nicht bestanden
+

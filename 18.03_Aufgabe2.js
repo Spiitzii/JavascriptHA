@@ -15,3 +15,4 @@ console.log(bewerteAlter(4));  //  Die Fahrt ist kostenlos.
 console.log(bewerteAlter(10)); //  Die Fahrt ist zum Kinderpreis.
 console.log(bewerteAlter(30)); //  Die Fahrt ist zum Vollpreis.
 console.log(bewerteAlter(70)); //  Die Fahrt ist zum Seniorenpreis.
+
