@@ -1,0 +1,10 @@
+// Erstellen eines Codeblocks mit einer if-Anweisung
+if (true) {
+    // Definition einer Funktion innerhalb des Blocks mit let
+    const myFunction = function() {
+        console.log("Hallo, Welt!");
+    };
+}
+
+// Versuch, außerhalb des Blocks auf die Funktion zuzugreifen
+myFunction(); // Fehler: ReferenceError: myFunction is not defined

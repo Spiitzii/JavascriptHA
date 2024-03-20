@@ -1,0 +1,10 @@
+function calculateTotalScore(scores) {
+    // Summiere alle Punkte in der Liste
+    const totalScore = scores.reduce((total, current) => total + current, 0);
+    return totalScore;
+}
+
+// Beispielaufruf
+const playerScores = [30, 30, 30];
+console.log(calculateTotalScore(playerScores)); // Output: 90
+

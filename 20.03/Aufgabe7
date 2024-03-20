@@ -1,0 +1,13 @@
+// Deklaration einer globalen Variable mit var
+var globalVar = "Global var Variable";
+
+// Deklaration einer globalen Variable mit let
+let globalLet = "Global Let Variable";
+
+// Deklaration einer globalen Variable mit const
+const globalConst = "Global Const Variable";
+
+// Zugriff auf die globalen Variablen über das `window`-Objekt
+console.log(window.globalVar);    // "Global Variable"
+console.log(window.globalLet);    // undefined
+console.log(window.globalConst);  // undefined

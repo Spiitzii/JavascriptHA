@@ -1,0 +1,8 @@
+// Deklaration einer Konstanten mit const
+const number = 25;
+
+// Versuch, den Wert der Konstanten zu ändern
+number = 24;
+
+// Es kommt eine Fehlermeldung das number zu einer const gehört
+// und die Variable nicht einfach so geändert werden kann

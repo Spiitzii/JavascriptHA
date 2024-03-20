@@ -1,0 +1,8 @@
+function filterItems(prices) {
+    return prices.filter(price => price < 10 && price % 2 === 0);
+}
+
+// Beispielaufruf
+const items = [5, 2, 8, 9, 20, 25];
+console.log(filterItems(items)); // Output: [2, 8]
+

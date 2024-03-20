@@ -1,0 +1,19 @@
+function countVisitorsInRange(ages, min, max) {
+    // Zähler für die Anzahl der Besucher im Bereich
+    let count = 0;
+
+    // Durchlaufe alle Alterswerte und zähle diejenigen, die im Bereich liegen
+    for (const age of ages) {
+        if (age >= min && age <= max) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+// Beispielaufruf
+const visitorsAges = [22, 34, 15, 17, 18, 45];
+const minAge = 18;
+const maxAge = 35;
+console.log(countVisitorsInRange(visitorsAges, minAge, maxAge)); // Ausgabe: 3

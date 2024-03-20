@@ -1,0 +1,5 @@
+// Versuch, auf eine Variable zuzugreifen, bevor sie deklariert wird
+
+
+console.log(num); // Fehler: ReferenceError: num is not defined
+let num = 10;

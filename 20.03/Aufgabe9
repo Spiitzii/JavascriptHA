@@ -1,0 +1,13 @@
+function filterAdults(users){
+    return users.filter(user => user.alter >= 18);
+}
+
+// Beispielaufruf
+const users = [
+    {name: "Max", alter: 22},
+    {name: "Anna", alter: 16},
+    {name: "Peter", alter: 25},
+    {name: "Lisa", alter: 17}
+];
+
+console.log(filterAdults(users));

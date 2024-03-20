@@ -1,0 +1,9 @@
+// Schleife mit let
+for (let i = 0; i < 3; i++) {
+    console.log("Innerhalb der Schleife: " + i);
+}
+
+// Zugriff auf die Schleifenvariable außerhalb der Schleife
+console.log("Außerhalb der Schleife: " + i);
+
+//Es kommt ein Error das i nicht deklariert wurde, bei Außerhalb.

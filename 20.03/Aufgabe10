@@ -1,0 +1,11 @@
+function Palindrome(username) {
+    // Entferne Leerzeichen und wandele den Benutzernamen in Kleinbuchstaben um
+    const cleanedUsername = username.toLowerCase().replace(/\s/g, '');
+    // Überprüfe, ob der bereinigte Benutzername dasselbe vorwärts und rückwärts liest
+    return cleanedUsername === cleanedUsername.split('').reverse().join('');
+}
+
+// Beispielaufrufe
+console.log(Palindrome("Anna")); // true
+console.log(Palindrome("Hannah")); // true
+console.log(Palindrome("Max")); // false

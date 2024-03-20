@@ -1,0 +1,14 @@
+// Definition einer Funktion
+function testFunction() {
+    // Deklaration einer Variablen mit var
+    var x = 10;
+    console.log("Innerhalb der Funktion: " + x);
+}
+
+// Aufruf der Funktion
+testFunction();
+
+// Zugriff auf die Variable außerhalb der Funktion
+console.log("Außerhalb der Funktion: " + x);
+
+//Die Variable ist nur in der Funktion Sichtbar, bei Zeile 12 wird sie nicht mehr deklariert sein

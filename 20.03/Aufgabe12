@@ -1,0 +1,21 @@
+function filterUniqueProducts(products) {
+    // Zähle die Häufigkeit jedes Produkts
+    const productCounts = {};
+    for (const product of products) {
+        productCounts[product] = (productCounts[product] || 0) + 1;
+    }
+
+    // Filtere nur die Produkte, die nur einmal vorkommen
+    const uniqueProducts = [];
+    for (const product in productCounts) {
+        if (productCounts[product] === 1) {
+            uniqueProducts.push(product);
+        }
+    }
+
+    return uniqueProducts;
+}
+
+// Beispielaufruf
+const products = ["T-Shirt", "Hose", "T-Shirt", "Mütze"];
+console.log(filterUniqueProducts(products)); // Ausgabe: ["Hose", "Mütze"]

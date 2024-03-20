@@ -1,0 +1,18 @@
+function countCategoryLevels(categories) {
+    if (Object.keys(categories).length === 0) {
+        return 0; // Basisfall: Wenn das Objekt keine Unterkategorien hat, ist die Tiefe 0
+    } else {
+        // Für jede Unterkategorie wird die maximale Tiefe rekursiv ermittelt und um 1 erhöht
+        const depths = Object.values(categories).map(countCategoryLevels);
+        return Math.max(...depths) + 1; // Die maximale Tiefe wird zurückgegeben
+    }
+}
+
+// Beispielaufruf
+const categories = {
+    Kleidung: {
+        Herren: { Hosen: {}, Hemden: {} },
+        Damen: { Kleider: {}, Röcke: {} }
+    }
+};
+console.log(countCategoryLevels(categories)); // Ausgabe: 3
